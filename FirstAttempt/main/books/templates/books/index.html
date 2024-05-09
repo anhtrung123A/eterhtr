@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="#", method="post">
+            {% csrf_token %}
+            {{form}}
+            <div>
+                <label for="">Book Title</label>
+                <input type="text", name = "booktitle">
+                <button>Add</button>
+            </div>
+            <div>
+                <label for="">Author</label>
+                <input type="text", name = "author">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
